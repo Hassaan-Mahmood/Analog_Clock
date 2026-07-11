@@ -22,7 +22,7 @@
 body {
   color: #fff;
   background-color: var(--dark-color);
-  background: var(--bg-gradient);
+  /* background: var(--bg-gradient); */
   display: flex;
   justify-content: center;
   align-items: center;
