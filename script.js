@@ -1,0 +1,23 @@
+let hour = document.getElementById("hour");
+let min = document.getElementById("min");
+let sec = document.getElementById("sec");
+
+function clock() {
+    let date = new Date();
+    let hh = date.getHours();
+    let mm = date.getMinutes();
+    let ss = date.getSeconds();
+
+    // console.log(hh, mm, ss);
+
+    let hRotation = 30 * hh + mm / 2;
+    let mRotation = 6 * mm;
+    let sRotation = 6 * ss;
+
+    hour.style.transform = `rotate(${hRotation}deg)`;
+    min.style.transform = `rotate(${mRotation}deg)`;
+    sec.style.transform = `rotate(${sRotation}deg)`;
+
+}
+
+setInterval(clock, 1000);
